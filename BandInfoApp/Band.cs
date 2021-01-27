@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BandInfoApp
 {
@@ -16,6 +13,8 @@ namespace BandInfoApp
 
         public string Members { get; set; }
 
+        public List<Album> AlbumList { get; set; }
+
         #endregion
 
         #region Constructors
@@ -25,9 +24,10 @@ namespace BandInfoApp
             BandName = bandName;
             YearFormed = yearFormed;
             Members = members;
+            AlbumList = new List<Album>();
         }
 
-        public Band() { }
+        public Band() : this("Unknown", 0000, "Unknown") { }
 
         #endregion
 
