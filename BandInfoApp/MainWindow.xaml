@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BandInfoApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="BandInfoApp" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Label x:Name="lblBands" Content="Bands" HorizontalAlignment="Left" Margin="92,25,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label x:Name="lblGenre" Content="Genre" HorizontalAlignment="Left" Margin="84,72,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="cbbxGenres" HorizontalAlignment="Left" Margin="136,72,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="262" Margin="84,114,0,0" VerticalAlignment="Top" Width="184"/>
+        <Label x:Name="lblBandInfo" Content="Band Information" HorizontalAlignment="Left" Margin="478,25,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:Name="tblkBandInfo" HorizontalAlignment="Left" Margin="478,114,0,0" TextWrapping="Wrap" Text="Band Information" VerticalAlignment="Top" FontSize="14" Height="75" Width="210"/>
+        <Label x:Name="lblAlbums" Content="Albums" HorizontalAlignment="Left" Margin="478,194,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <ListBox x:Name="lbxAlbums" HorizontalAlignment="Left" Height="116" Margin="478,241,0,0" VerticalAlignment="Top" Width="210"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="613,375,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
