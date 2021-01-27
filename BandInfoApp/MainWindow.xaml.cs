@@ -48,6 +48,9 @@ namespace BandInfoApp
             allBands.Add(b5);
             allBands.Add(b6);
 
+            //Sort Bands
+            allBands.Sort();
+
             //Display in Listbox
             lbxBands.ItemsSource = allBands;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BandInfoApp
 {
-    public class Band
+    public class Band : IComparable
     {
         #region Properties
 
@@ -36,6 +36,13 @@ namespace BandInfoApp
         public override string ToString()
         {
             return BandName;
+        }
+
+        public int CompareTo(object obj)
+        {
+            Band otherBand = obj as Band;
+
+            return this.BandName.CompareTo(otherBand.BandName);
         }
 
         #endregion
