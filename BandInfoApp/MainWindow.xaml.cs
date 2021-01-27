@@ -31,14 +31,14 @@ namespace BandInfoApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Band b1 = new Band("BLACKPINK", 2016, "Lisa, Jennie, Jisoo, Rosé");
-            Band b2 = new Band("BTS", 2013, "J-Hope, Jimin, Jin, Jungkook, RM, Suga, V");
+            KPopBand b1 = new KPopBand() { BandName = "BLACKPINK", YearFormed = 2016, Members = "Lisa, Jennie, Jisoo, Rosé" };
+            KPopBand b2 = new KPopBand() { BandName = "BTS", YearFormed = 2013, Members = "J-Hope, Jimin, Jin, Jungkook, RM, Suga, V" };
 
-            Band b3 = new Band("Little Mix", 2011, "Leigh-Anne Pinnock, Jade Thirlwall, Jesy Nelson, Perrie Edwards");
-            Band b4 = new Band("Jonas Brothers", 2005, "Joe Jonas, Kevin Jonas, Nick Jonas");
+            PopBand b3 = new PopBand() { BandName = "Little Mix", YearFormed = 2011, Members = "Leigh-Anne Pinnock, Jade Thirlwall, Jesy Nelson, Perrie Edwards" };
+            PopBand b4 = new PopBand() { BandName = "Jonas Brothers", YearFormed = 2005, Members = "Joe Jonas, Kevin Jonas, Nick Jonas" };
 
-            Band b5 = new Band("The Vamps", 2012, "Brad Simpson, Connor Ball, James McVey, Tristan Evans");
-            Band b6 = new Band("McFly", 2003, "Danny Jones, Dougie Poynter, Harry Judd, Tom Fletcher");
+            PopRockBand b5 = new PopRockBand() { BandName = "The Vamps", YearFormed = 2012, Members = "Brad Simpson, Connor Ball, James McVey, Tristan Evans" };
+            PopRockBand b6 = new PopRockBand() { BandName = "McFly", YearFormed = 2003, Members = "Danny Jones, Dougie Poynter, Harry Judd, Tom Fletcher" };
 
             //Add to Collection
             allBands.Add(b1);

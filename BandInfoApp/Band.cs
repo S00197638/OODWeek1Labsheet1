@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BandInfoApp
 {
-    public class Band : IComparable
+    public abstract class Band : IComparable
     {
         #region Properties
 
@@ -43,6 +43,42 @@ namespace BandInfoApp
             Band otherBand = obj as Band;
 
             return this.BandName.CompareTo(otherBand.BandName);
+        }
+
+        #endregion
+    }
+
+    public class KPopBand : Band
+    {
+        #region Methods
+
+        public override string ToString()
+        {
+            return base.ToString() + "  |  K-Pop Band";
+        }
+
+        #endregion
+    }
+
+    public class PopBand : Band
+    {
+        #region Methods
+
+        public override string ToString()
+        {
+            return base.ToString() + "  |  Pop Band";
+        }
+
+        #endregion
+    }
+
+    public class PopRockBand : Band
+    {
+        #region Methods
+
+        public override string ToString()
+        {
+            return base.ToString() + "  |  Pop-Rock Band";
         }
 
         #endregion
