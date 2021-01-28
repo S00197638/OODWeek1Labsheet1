@@ -31,6 +31,11 @@ namespace BandInfoApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Populate Combo Box
+            string[] genres = { "All", "K-Pop", "Pop", "Pop-Rock" };
+            cbbxGenres.ItemsSource = genres;
+            cbbxGenres.SelectedItem = "All";
+            
             //Creating Bands
             KPopBand b1 = new KPopBand() { BandName = "BLACKPINK", YearFormed = 2016, Members = "Lisa, Jennie, Jisoo, Rosé" };
             KPopBand b2 = new KPopBand() { BandName = "BTS", YearFormed = 2013, Members = "J-Hope, Jimin, Jin, Jungkook, RM, Suga, V" };
@@ -123,6 +128,54 @@ namespace BandInfoApp
 
         #endregion
 
+        #region Filtering
 
+        //Filter Based on Combo Box
+        private void cbbxGenres_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Determine what is selected
+            string selectedGenre = cbbxGenres.SelectedItem as string;
+
+            //Setup Filter List
+            List<Band> filteredBands = new List<Band>();
+
+            //Check
+            switch (selectedGenre)
+            {
+                case "All":
+                    lbxBands.ItemsSource = allBands;
+                    break;
+
+                case "K-Pop":
+                    foreach (Band band in allBands)
+                    {
+                        if (band is KPopBand)
+                            filteredBands.Add(band);
+                    }
+                    lbxBands.ItemsSource = filteredBands;
+                    break;
+
+                case "Pop":
+                    foreach (Band band in allBands)
+                    {
+                        if (band is PopBand)
+                            filteredBands.Add(band);
+                    }
+                    lbxBands.ItemsSource = filteredBands;
+                    break;
+
+                case "Pop-Rock":
+                    foreach (Band band in allBands)
+                    {
+                        if (band is PopRockBand)
+                            filteredBands.Add(band);
+                    }
+                    lbxBands.ItemsSource = filteredBands;
+                    break;
+
+            }
+        }
+
+        #endregion
     }
 }

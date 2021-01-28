@@ -9,7 +9,7 @@
     <Grid>
         <Label x:Name="lblBands" Content="Bands" HorizontalAlignment="Left" Margin="92,25,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <Label x:Name="lblGenre" Content="Genre" HorizontalAlignment="Left" Margin="84,72,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <ComboBox x:Name="cbbxGenres" HorizontalAlignment="Left" Margin="136,72,0,0" VerticalAlignment="Top" Width="132" Height="29"/>
+        <ComboBox x:Name="cbbxGenres" HorizontalAlignment="Left" Margin="136,72,0,0" VerticalAlignment="Top" Width="132" Height="29" SelectionChanged="cbbxGenres_SelectionChanged"/>
         <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="262" Margin="84,114,0,0" VerticalAlignment="Top" Width="207" SelectionChanged="lbxBands_SelectionChanged" FontSize="14"/>
         <Label x:Name="lblBandInfo" Content="Band Information" HorizontalAlignment="Left" Margin="398,25,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <TextBlock x:Name="tblkBandInfo" HorizontalAlignment="Left" Margin="398,84,0,0" TextWrapping="Wrap" Text="Band Information..." VerticalAlignment="Top" FontSize="16" Height="96" Width="356"/>
