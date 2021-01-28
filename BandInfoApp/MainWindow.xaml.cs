@@ -51,28 +51,28 @@ namespace BandInfoApp
 
             //Creating Albums
             //BLACKPINK Albums
-            Album a1 = new Album("THE ALBUM", 2020, rng.Next(10000000, 1000000000));
-            Album a2 = new Album("BLACKPINK IN YOUR AREA", 2018, rng.Next(10000000, 1000000000));
+            Album a1 = new Album("THE ALBUM", new DateTime(2020, 1, 1), rng.Next(10000000, 1000000000));
+            Album a2 = new Album("BLACKPINK IN YOUR AREA", new DateTime(2018, 1, 1), rng.Next(10000000, 1000000000));
 
             //BTS Albums
-            Album a3 = new Album("BE", 2020, rng.Next(10000000, 1000000000));
-            Album a4 = new Album("MAP OF THE SOUL : 7", 2020, rng.Next(10000000, 1000000000));
+            Album a3 = new Album("BE", new DateTime(2020, 1, 1), rng.Next(10000000, 1000000000));
+            Album a4 = new Album("MAP OF THE SOUL : 7", new DateTime(2020, 1, 1), rng.Next(10000000, 1000000000));
 
             //Little Mix Albums
-            Album a5 = new Album("Confetti", 2020, rng.Next(10000000, 1000000000));
-            Album a6 = new Album("LM5", 2018, rng.Next(10000000, 1000000000));
+            Album a5 = new Album("Confetti", new DateTime(2020, 1, 1), rng.Next(10000000, 1000000000));
+            Album a6 = new Album("LM5", new DateTime(2018, 1, 1), rng.Next(10000000, 1000000000));
 
             //Jonas Brothers Albums
-            Album a7 = new Album("Happiness Begins", 2019, rng.Next(10000000, 1000000000));
-            Album a8 = new Album("JONAS L.A.", 2010, rng.Next(10000000, 1000000000));
+            Album a7 = new Album("Happiness Begins", new DateTime(2019, 1, 1), rng.Next(10000000, 1000000000));
+            Album a8 = new Album("JONAS L.A.", new DateTime(2010, 1, 1), rng.Next(10000000, 1000000000));
 
             //The Vamps Albums
-            Album a9 = new Album("Cherry Blossom", 2020, rng.Next(10000000, 1000000000));
-            Album a10 = new Album("Night & Day", 2018, rng.Next(10000000, 1000000000));
+            Album a9 = new Album("Cherry Blossom", new DateTime(2020, 1, 1), rng.Next(10000000, 1000000000));
+            Album a10 = new Album("Night & Day", new DateTime(2018, 1, 1), rng.Next(10000000, 1000000000));
 
             //McFly Albums
-            Album a11 = new Album("Young Dumb Thrills", 2020, rng.Next(10000000, 1000000000));
-            Album a12 = new Album("Above The Noise", 2010, rng.Next(10000000, 1000000000));
+            Album a11 = new Album("Young Dumb Thrills", new DateTime(2020, 1, 1), rng.Next(10000000, 1000000000));
+            Album a12 = new Album("Above The Noise", new DateTime(2010, 1, 1), rng.Next(10000000, 1000000000));
 
             //Add Albums
             b1.AlbumList.Add(a1);
